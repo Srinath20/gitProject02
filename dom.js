@@ -21,3 +21,9 @@ console.log(li[2].textContent);
 for(var i =0; i <li.length;i++){
     li[i].style.backgroundColor = 'Blue';
 }
+var first = document.querySelector('li');
+first.style.backgroundColor='White';
+var second = document.querySelector('li:nth-child(2)');
+second.style.backgroundColor = 'green';
+var third = document.querySelector('li:nth-child(3)');
+third.style.opacity= 0;
