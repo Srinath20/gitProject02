@@ -15,3 +15,9 @@ edit.style.backgroundColor = 'green';
 for(var i=0;i<Item.length;i++){
     Item[i].style.fontWeight = 'bold';
 }
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[2].textContent);
+for(var i =0; i <li.length;i++){
+    li[i].style.backgroundColor = 'Blue';
+}
