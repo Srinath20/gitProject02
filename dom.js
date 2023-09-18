@@ -52,7 +52,7 @@ console.log(itemList.previousElementSibling);
 var newDiv = document.createElement('div');
 newDiv.className = 'hello';
 newDiv.id = 'hello1';
-newDiv.setAttribute('titile',"HEllo");
+newDiv.setAttribute('titile',"HEllo"); 
 var newText = document.createTextNode('HEllo');
 newDiv.appendChild(newText);
 
@@ -61,3 +61,12 @@ var container = document.querySelector('header .container');
 var h1 = document.querySelector('header h1');
 container.insertBefore(newDiv,h1);
 
+//Events
+var form = document.getElementsByClassName('form-inline mb-3');
+console.log(form);
+form.addEventListener('submit', addItem);
+//addItem Function
+function addItem(e){
+    e.preventDefault();
+    console.log(1);
+}
